@@ -1,0 +1,20 @@
+.card {
+    padding: 30px;
+    width: 25%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 3% auto;
+
+}
+.account_circle {
+    color: #ccc;
+    font-size: 100px;
+}
+form {
+    text-align: center;
+}
+.full-width {
+  width: 100%;
+}

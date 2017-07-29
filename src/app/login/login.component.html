@@ -1,0 +1,43 @@
+ <md-card class="card">
+    <md-icon>person</md-icon>
+    <h2>Войдите в систему</h2>
+    <form [formGroup]="loginForm">
+        <md-input-container class="full-width">
+            <input mdInput placeholder="Name" formControlName="name" required>
+            <md-error *ngIf="formErrors.name">
+                {{formErrors.name}}
+            </md-error>
+        </md-input-container>
+
+        <md-input-container class="full-width">
+            <input mdInput placeholder="Surname" formControlName="surname" required>
+            <md-error *ngIf="formErrors.surname">
+                {{formErrors.surname}}
+            </md-error>
+        </md-input-container>
+
+        <md-input-container class="full-width">
+            <input mdInput placeholder="Adress" formControlName="adress" required>
+            <md-error *ngIf="formErrors.adress">
+                {{formErrors.adress}}
+            </md-error>
+        </md-input-container>
+        
+        <md-input-container class="full-width">
+            <span mdPrefix>+380 &nbsp;</span>
+            <input mdInput placeholder="Number" formControlName="number" required maxlength="9" placeholder="XXXXXXXXX">
+            <md-error *ngIf="formErrors.number">
+                {{formErrors.number}}
+            </md-error>
+        </md-input-container>
+
+        <md-input-container class="full-width">
+            <input mdInput placeholder="Email" formControlName="email" required>
+            <md-error *ngIf="formErrors.email">
+                {{formErrors.email}}
+            </md-error>
+        </md-input-container>
+
+        <button md-raised-button [disabled]="!loginForm.valid" routerLink="/congratulation">Вход</button>
+    </form>
+</md-card>

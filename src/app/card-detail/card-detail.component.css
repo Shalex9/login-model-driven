@@ -1,0 +1,123 @@
+.pay {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+.payForm {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+label {
+    margin-right: 10px;
+}
+.card {
+    padding: 80px 10px 0 10px;
+    margin: 30px;
+    background-color: #eceef0;
+    border-radius: 5px;
+    width: 330px;
+    height: 250px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+    float: left;
+    position: relative;
+    z-index: 2;
+    box-shadow: 5px 0 0 0 rgba(0,0,0,0.15);
+}
+.card_details_text {
+    position: absolute;
+    width: 310px;
+    text-align: center;
+    margin-top: -50px !important;
+    font-size: 14px !important;
+    color: #a1abb2 !important;
+}
+.card_data_text {
+    position: absolute;
+    width: 310px;
+    text-align: center;
+    margin-top: -70px !important;
+    font-size: 14px !important;
+    color: #a1abb2 !important;
+}
+input#cardNumber {
+    display: inline-block;
+    max-width: 290px;
+    text-align: left;
+    background-color: transparent;
+    border: none;    
+    border-radius: 0;
+    font-size: 24px;
+    outline:none;
+}
+.card_validity_text {
+    margin-left: 15px;
+    text-align: left;
+    width: 50px;
+    bottom: 0;
+    color: #ccc ;
+}
+.spec_ks {
+    height: 40px;
+    border: none !important;
+    border-bottom: 2px solid #ccc;
+    margin: 35px 25px 0 0 !important;
+    padding: 0;
+    box-sizing: border-box;
+}
+.spec_ks > option {
+    font-weight: normal;
+    display: block;
+    padding: 0 2px 1px;
+}
+.card2 {
+    margin: 30px 0 0 -35px;
+    position: relative;
+    left: -5px;
+    background-color: #f7f8fb;
+    border-radius: 5px;
+    height: 250px;
+    width: 256px;
+    text-align: center;
+    display: inline-block;
+    box-sizing: border-box;
+}
+.card2_line {
+    width: 100%;
+    height: 45px;
+    background-color: #e1e2e4;
+    margin: 20px 0;
+}
+#cardCvv {
+    font-size: 22px;
+    max-width: 140px;
+    background-color: transparent;
+    border: none;
+    border-radius: 0;
+    outline:none; 
+}
+.button_wrapper {
+    display: inline-block;
+    margin: 40px 10px 0 10px
+}
+.button_submit {
+    color: #1d1d1b !important;
+    background-color: #fedc00 !important;
+    border: none !important;
+    float: right;
+    min-width: 160px !important;
+    height: 40px !important;
+    padding: 0 10px !important;
+    margin: 0 10px !important;
+    font-family: MuseoSansCyrl-700, Arial, Helvetica !important;
+    font-size: 14px !important;
+    border-radius: 50px !important;
+    box-sizing: border-box;
+    text-shadow: none !important;
+    outline: none;
+    cursor: pointer;
+}
